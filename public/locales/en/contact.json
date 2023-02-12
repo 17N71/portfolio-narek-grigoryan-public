@@ -1,0 +1,28 @@
+{
+	"title": "Contact",
+	"subtitle": "Get In Touch",
+	"description": "If you have any suggestion, project or even you want to say “hello”, please fill out the form below and I will reply you shortly.",
+	"name": {
+		"placeholder": "Name",
+		"error": {
+			"verification": "Write correct name | ",
+			"required": "Name is required! | ",
+			"length": "Name can't be less than 3 symbols! |"
+		}
+	},
+	"mail": {
+		"placeholder": "Mail",
+		"error": {
+			"verification": "Write the correct mail! | ",
+			"required": "mail is required | "
+		}
+	},
+	"message": {
+		"placeholder": "Message",
+		"error": {
+			"required": "Message is required!",
+			"length": "Message can't be less than 3 symbols!"
+		}
+	},
+	"send": "Send message"
+}

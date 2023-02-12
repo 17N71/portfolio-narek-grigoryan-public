@@ -1,0 +1,18 @@
+.home-main {
+	@apply flex flex-col sms:flex-row h-full;
+}
+.home-left {
+	@apply flex flex-col absolute left-0 sms:w-[65%] w-full h-full;
+}
+.home-right {
+	@apply fixed top-0 right-0 h-full border-l dark:border-white border-gray-400;
+}
+.home-paddings {
+	@apply mdm:px-12 vsm:px-8 px-4 pt-48;
+}
+.home-top {
+	@apply w-full justify-center items-center flex pt-10 px-6;
+	& .home-right-typed {
+		@apply vsm:text-xl text-base;
+	}
+}

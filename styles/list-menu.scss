@@ -1,0 +1,27 @@
+.list-menu {
+	@apply fixed top-0 transition-all duration-500 ease-in -right-full z-10 sms:w-1/2 w-full dark:bg-[#181715] bg-white backdrop-blur-md h-full sms:border-l sms:border-current px-8 sms:pl-12 py-8 sms:block flex justify-center items-center;
+	&.active {
+		@apply right-0;
+	}
+	&-ul {
+		@apply inline-flex flex-col gap-3 text-3xl;
+		& > li {
+			@apply transition-colors duration-200 dark:hover:text-white/[70%] hover:text-darkBG/[70%];
+		}
+	}
+	&-open-btn {
+		@apply fixed top-4 right-8 z-[9] cursor-pointer outline-none border-none;
+		& * {
+			@apply outline-none border-none;
+		}
+	}
+	&-background {
+		@apply w-full fixed z-[9] top-0 left-0 h-full dark:bg-darkBG/[75%] bg-black/[74%];
+	}
+	&-close-btn {
+		@apply absolute right-10 top-8 text-current cursor-pointer transition-colors duration-300 dark:hover:text-lightChocolate hover:text-darkBG;
+	}
+	&-language {
+		@apply absolute right-10 bottom-8;
+	}
+}

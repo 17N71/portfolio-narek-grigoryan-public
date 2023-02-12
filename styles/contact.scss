@@ -1,0 +1,77 @@
+.contact {
+	&-section {
+		@apply w-full flex flex-col gap-5 xl:mt-48 lg:mt-44 sms:mt-40 md:mt-32 mdm:mt-28 mt-20;
+	}
+	&-title {
+		@apply xl:text-4xl text-3xl  dark:text-lightChocolate mb-5;
+	}
+	&-subtitle {
+		@apply dark:text-white text-darkBG xl:text-6xl sms:text-5xl md:text-4xl text-3xl mb-12 mt-6 relative;
+		&::after {
+			content: "";
+			@include subLine(45%);
+		}
+	}
+	&-desc {
+		@apply text-xl text-gray-500/80  dark:text-gray-200/70;
+	}
+	&-NameAndEmail {
+		@apply mt-5 flex md:flex-row gap-7 flex-col  md:gap-2;
+	}
+	&-formField {
+		@apply flex flex-col;
+	}
+
+	&-label {
+		@apply relative;
+	}
+	&-legend {
+		@apply absolute -top-1 pointer-events-none left-[3%] transition-all duration-300 px-2 py-5;
+	}
+	&-mess {
+		@apply w-full h-14 bg-transparent border
+    resize-none
+  transition-all duration-300 border-gray-500/60  dark:border-gray-300/60 px-5 py-3 outline-none;
+		&:hover {
+			@apply dark:border-gray-300/90 border-gray-900;
+		}
+		&:focus {
+			@apply border-[#987747];
+		}
+		&:focus:hover {
+			@apply border-[#987747];
+		}
+	}
+	&-label {
+		@apply flex-1 w-full;
+		input {
+			@apply w-full h-14 bg-transparent border
+      transition-all duration-300 border-gray-500/60  dark:border-gray-300/60 px-5 py-2 outline-none;
+			&:hover {
+				@apply dark:border-gray-300/90 border-gray-900;
+			}
+			&:focus {
+				@apply border-[#987747];
+			}
+			&:focus:hover {
+				@apply border-[#987747];
+			}
+		}
+	}
+	&-focusField {
+		@apply -top-5 rounded-lg dark:bg-stone-900 bg-gray-500  px-4 py-1 left-[10px] text-white font-semibold dark:text-[#987747];
+	}
+
+	&-errors {
+		@apply text-red-600 mb-5 text-lg;
+	}
+	&-submitBtn {
+		@apply w-full
+  bg-transparent
+  border-2 font-semibold
+  text-lg tracking-wider
+  dark:border-gray-300/60
+  border-gray-500/60 mt-4 px-4 py-3
+  transition-all duration-300 dark:hover:text-[#987747] hover:text-gray-900 hover:border-gray-900  dark:hover:border-[#987747];
+	}
+}

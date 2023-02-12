@@ -1,0 +1,10 @@
+@mixin heading36px {
+	@apply sms:text-4xl text-3xl;
+}
+@mixin heading60px() {
+	@apply xl:text-6xl sms:text-5xl text-4xl;
+}
+@mixin subLine($length) {
+	@apply absolute h-1 -bottom-3 left-0 block z-[8] dark:bg-slate-300 bg-stone-600/60;
+	width: $length;
+}

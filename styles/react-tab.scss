@@ -1,0 +1,53 @@
+.react-tabs__tab-list {
+	@apply flex md:flex-row flex-wrap flex-col md:items-start items-center md:gap-36 gap-10 text-2xl justify-start mb-5;
+}
+.react-tabs__tab {
+	@apply relative outline-none cursor-pointer after:w-0 after:transition-all after:duration-200 after:ease-out after:absolute after:-bottom-1 after:left-0 after:h-[2px]  after:bg-transparent;
+}
+.react-tabs__tab--selected {
+	@apply dark:after:bg-lightChocolate outline-none after:bg-darkBG after:w-full;
+}
+.react-tabs__tab-panel.react-tabs__tab-panel--selected {
+	@apply pt-5 flex flex-col gap-5;
+}
+// content tabItem
+.tabItem {
+	@apply flex flex-col dark:bg-[#151412]  bg-white  shadow-sm shadow-black rounded-md mdm:px-6 px-4 mdm:py-10 py-5 drop-shadow-md relative h-full;
+	&::after {
+		content: "";
+		@apply absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-12 dark:bg-lightBG/60 bg-darkBG/70;
+	}
+}
+.tabHeading {
+	@apply text-current;
+}
+.tabItemHeader {
+	@apply flex mdm:justify-between justify-center mdm:flex-row flex-col mdm:items-start items-center;
+}
+.dateHeading {
+	@apply text-gray-500;
+}
+.tabItemTitle {
+	@apply text-2xl text-current mdm:mb-3 mb-2;
+}
+.tabItemSubTitle {
+	@apply mdm:text-4xl text-2xl text-current mdm:mt-3 mt-2;
+}
+.tabItemParagraph {
+	@apply text-gray-400 text-lg  mt-4;
+}
+.skillBar {
+	@apply h-1 dark:bg-[#906d49] z-[8] bg-darkBG after:w-full after:absolute after:h-1 dark:after:bg-[#333333] after:bg-lightChocolate after:-z-10 after:left-0;
+}
+.skillTabHeader {
+	@apply relative w-full flex sm:justify-between justify-center sm:flex-row flex-col items-center mb-1;
+}
+.skillTabHeading {
+	@apply sm:text-2xl text-xl sm:mb-0 mb-2 dark:text-gray-400 text-darkBG;
+}
+.skillTable {
+	@apply sm:absolute right-0 top-0 px-2 py-1 dark:text-lightChocolate dark:bg-darkBG bg-gray-400 text-darkBG;
+}
+.skillBarContainer {
+	@apply relative w-full;
+}

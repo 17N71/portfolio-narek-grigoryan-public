@@ -1,0 +1,49 @@
+.CurrentPortfolioPage {
+	@apply 2xl:px-32 sms:px-28 vsm:px-16 px-8 pb-4 pt-7;
+	&-header {
+		@apply flex mdl:justify-between justify-center mdl:flex-row flex-col-reverse  mdl:gap-2 gap-3 items-center;
+		button,
+		a {
+			@apply outline-none;
+		}
+	}
+	&-urls {
+		@apply w-full flex mdl:gap-1 gap-3 mdl:justify-between mdl:flex-row flex-col justify-center mt-10 items-center;
+		a {
+			@apply px-12 vsm:py-4 py-1 rounded-[5rem] mdm:text-lg  text-center cursor-pointer;
+			transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+			&:hover {
+				@apply mdm:tracking-wide;
+			}
+		}
+		a:first-of-type {
+			@apply bg-[#1b8bf9];
+			box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4);
+			&:hover {
+				box-shadow: 3px 4.9px 16px rgba(27, 139, 249, 0.6);
+			}
+		}
+		a:last-of-type {
+			@apply bg-[#ef003e];
+			box-shadow: 1px 2.9px 16px rgba(239, 0, 62, 0.4);
+			&:hover {
+				box-shadow: 3px 4.9px 16px rgba(239, 0, 62, 0.6);
+			}
+		}
+	}
+	&-title {
+		@apply xl:text-7xl sms:text-6xl md:text-5xl text-4xl  tracking-wider text-gold text-center;
+	}
+	&-main {
+		@apply flex flex-wrap gap-8 mdm:mt-20 mt-10 justify-center;
+	}
+	&-imageContainer {
+		@apply mdl:basis-1/2 mdl:max-w-[calc(50%-2rem)] justify-center relative max-w-full basis-full flex-grow flex-shrink flex;
+	}
+	&-image {
+		@apply w-full h-full max-w-full align-middle object-cover relative z-[8] rounded-sm;
+	}
+	&-goBack {
+		@apply hover:text-gold transition-colors duration-200 ease-in border-current border p-1;
+	}
+}

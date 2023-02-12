@@ -1,0 +1,24 @@
+.about-table-big {
+	@apply flex gap-4 justify-between w-full;
+	&-table-values,
+	&-table-keys {
+		@apply flex flex-col gap-5;
+	}
+	&-table-keys {
+		@apply text-gray-400 capitalize;
+	}
+}
+.about-tables {
+	@apply flex justify-between md:flex-row flex-col  gap-5 w-full mt-10  mdm:text-2xl text-xl;
+}
+.about-table-big-link {
+	@apply relative inline-flex;
+	&::after {
+		content: "";
+		@include subLine(100%);
+		@apply h-[1px] -bottom-1;
+	}
+}
+.about-table-small-table {
+	@apply flex flex-col gap-2 mb-4;
+}

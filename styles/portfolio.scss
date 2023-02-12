@@ -1,0 +1,36 @@
+.portfolio {
+	@apply xl:mt-28 lg:mt-24 md:mt-20  mt-16;
+	&-header {
+		&-title {
+			@apply xl:text-4xl sms:text-3xl text-2xl text-lightChocolate;
+		}
+		&-subtitle {
+			@apply relative xl:text-6xl sms:text-5xl md:text-4xl text-3xl dark:text-white text-darkBG mt-12;
+			&::after {
+				content: "";
+				@include subLine(45%);
+			}
+		}
+	}
+	&-slider {
+		@apply mt-12;
+	}
+	&-splide {
+		@apply flex w-full justify-start flex-col items-end;
+		&Slide {
+			@apply object-cover w-full h-full object-center;
+		}
+	}
+	&-slider-link {
+		@apply w-full h-full;
+	}
+	.splide__arrow.splide__arrow--prev {
+		@apply transform -rotate-180;
+	}
+	.splide__arrow svg {
+		@apply transition-colors duration-200 ease-out fill-[#cbb040] hover:fill-[#baa010] md:w-10 md:h-10 w-5 h-5;
+	}
+	.splide__arrow {
+		@apply mb-2;
+	}
+}

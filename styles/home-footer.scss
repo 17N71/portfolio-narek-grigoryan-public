@@ -1,0 +1,22 @@
+.home-footer {
+	@apply py-10 mt-20 border-t border-current relative;
+	&-template,
+	&-rights {
+		@apply text-current text-lg;
+	}
+	&-rights {
+		@apply mt-3;
+	}
+	&-to-top {
+		@apply absolute -top-3 right-4
+    dark:hover:border-lightChocolate  hover:border-darkBG
+     w-10 h-10
+     transition-all duration-200 ease-linear transform
+     hover:scale-[1.2]
+     flex justify-center items-center
+     border border-current;
+		& svg {
+			@apply dark:bg-darkBG transition-colors duration-200 bg-lightBG fill-current w-full h-full dark:hover:fill-lightChocolate  hover:fill-darkBG;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"name": "portfolio-narek-grigoryan",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --port 1771",
+		"build": "next build",
+		"start": "next start ",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@apollo/client": "^3.7.4",
+		"@next/font": "^13.1.6",
+		"@splidejs/react-splide": "^0.7.12",
+		"@types/node": "18.11.18",
+		"@types/react": "18.0.27",
+		"@types/react-dom": "18.0.10",
+		"date-fns": "^2.29.3",
+		"eslint": "8.32.0",
+		"eslint-config-next": "13.1.3",
+		"framer-motion": "^8.5.0",
+		"graphql": "^16.6.0",
+		"ky": "^0.33.2",
+		"next": "13.1.3",
+		"react": "18.2.0",
+		"react-country-flag": "^3.0.2",
+		"react-dom": "18.2.0",
+		"react-hook-form": "^7.42.1",
+		"react-icons": "^4.7.1",
+		"react-image-viewer-dv": "^1.0.2",
+		"react-match-media": "^2.2.2",
+		"react-scroll": "^1.8.9",
+		"react-tabs": "^6.0.0",
+		"react-typed": "^1.2.0",
+		"sass": "^1.57.1",
+		"sharp": "^0.31.3",
+		"typescript": "4.9.4"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.13",
+		"eslint-config-prettier": "^8.6.0",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^3.2.4"
+	}
+}

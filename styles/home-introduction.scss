@@ -1,0 +1,21 @@
+@import "mixins.scss";
+.home-introduction {
+	@apply leading-loose;
+	&-title {
+		@include heading36px();
+	}
+	&-subtitle {
+		@include heading60px;
+		@apply relative mt-12 inline-block dark:text-white text-black;
+		&::after {
+			content: "";
+			@include subLine(45%);
+		}
+	}
+	&-short-bio {
+		@apply sms:text-3xl text-2xl mt-14  2xl:pr-96 mdl:pr-44 pr-10 dark:text-[#ffffff99] text-black;
+	}
+	&-image {
+		@apply mt-12 w-auto h-auto;
+	}
+}
